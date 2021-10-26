@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:text="ELECTION COMMISSION"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="#3FFFC107"
+        android:gravity="center"
+
+        android:textColor="#E91E63"
+        android:textSize="31sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+
+
+        android:background="#3BC8B3B3"
+        android:gravity="center"
+        android:text="PARTIES"
+        android:textColor="#FF5722"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/borderone"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/bjp"
+
+                android:layout_marginEnd="20dp"
+                  />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Bharatiya Janata Party"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/borderone"
+            android:layout_height="wrap_content">>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="80dp"
+                android:gravity="center"
+                android:text="Congress Party"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@drawable/congress"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+
+                android:layout_marginEnd="20dp"
+               />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/borderone"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ncp"
+
+                android:layout_marginEnd="20dp"
+              />
+
+            <RadioButton
+                android:id="@+id/na"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="National Congress Party"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/borderone"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@drawable/nota"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="0dp"
+
+                android:layout_marginEnd="20dp"
+                  />
+
+            <RadioButton
+                android:id="@+id/nota"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                android:text="NOTA"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonreg"
+        android:layout_width="235dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="100dp"
+
+        android:background="@drawable/ripplebutton"
+
+        android:text="vote"
+        android:textColor="#FAF6F6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
